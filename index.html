@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+        <div id="logo">
+            <h1><a href="index.html">NC</a></h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,65 +23,97 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <h1>Hi, my name is Nick.</h1>
-        <img width="300" src="assets/img/nick guitar.jpg">
-        <h2>Skills:</h2>
-        <ul>
-            <li>Web Development
-                <ul>
-                    <li>Front-End
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </li>
-                    <li>Back-End
-                        <ul>
-                            <li>Python</li>
-                            <li>PHP</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Music Production
-                <ul>
-                    <li>Ableton</li>
-                    <li>Protools</li>
-                </ul>
-            </li>
-            <li>Songwriting</li>
-            <ul>
-                <li>Instruments:
-                    <ul>
-                        <li>Guitar</li>
-                        <li>Bass</li>
-                        <li>Keyboards</li>
-                    </ul>
-                </li>
-                <li>Genres:
-                    <ul>
-                        <li>Rock</li>
-                        <li>Metal</li>
-                        <li>Video-Game</li>
-                        <li>Soundtrack</li>
-                        <li>Electronic</li>
-                        <li>Hip-Hop</li>
-                    </ul>
-                </li>
-            </ul>
-        </ul>
+    <section>
+        <div id="introContainer">
+            <h1 id="intro">Hi, my name is Nick.</h1>
+            <h2 id="introTitle">Web Developer</h2>
+            <img id="nickPic" width="300" src="assets/img/nick guitar.jpg">
+        </div>
+        <div id="skills">
+            <h2>Skills:</h2>
+        </div>
+        <div id="skillList">
+            <div class="skillcontainer">
+                <h3>Front-End</h3>
+                <h4>HTML</h4>
+                <p><i class="fab fa-html5"></i></p>
+                <h4>CSS</h4>
+                <p><i class="fab fa-css3-alt"></i></p>
+                <h4>Javascript</h4>
+                <p><i class="fab fa-js"></i></p>
+            </div>
+            <div class="skillcontainer">
+                <h3>Back-End</h3>
+                <h4>Python</h4>
+                <p><i class="fab fa-python"></i></p>
+                <h4>PHP</h4>
+                <p><i class="fab fa-php"></i></p>
+            </div>
+        </div>
+    </section>
+    <div id="projectintro">
+        <h3>Check out some of my work below!</h3>
     </div>
+    <section id="projects">
+        <div class="container">
+            <h4>Tip calculator</h4>
+            <a href="https://ncavaliere1991.github.io/Tip-Calculator/">Click here to see the website</a>
+            <a href="https://github.com/NCavaliere1991/Tip-Calculator">Click here for the Github repository</a>
+            <img src="assets/img/calculator.png" width="150">
+            <p>I made this to help the bartenders at my job do the money at the end of the night more quickly and
+                efficiently.</p>
+        </div>
+        <div class="container">
+            <h4>Take a Break Website</h4>
+            <a href="https://iwanttotakeabreak.com/">Click here to see the website</a>
+            <a href="https://github.com/NCavaliere1991/Take-A-Break">Click here for the Github repository</a>
+            <img src="assets/img/calculator.png" width="150">
+            <p>A website I built for a friend. Runs a timer to track amount of time the user is on the site and cycles
+                through pictures of serene upstate New York. Meant to give the user respite from monotonous days working
+                from home.</p>
+        </div>
+        <div class="container">
 
-    <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <p>&copy; 2021 Copyright. All Rights Reserved.</p>
-    </footer>
+        </div>
+    </section>
+
+    <section id="contactsection">
+        <div id="contactintro">
+            <h1>Drop Me a Line!</h1>
+            <p>I love working on new projects and helping others realize their vision. Shoot me an email and let's chat!
+            </p>
+        </div>
+
+        <!-- <form id="contactform" action="mailto:nickcavaliere1991@gmail.com">
+            <label> First Name: <br>
+                <input name="fName" type="text">
+            </label>
+            <br>
+            <label> Last Name: <br>
+                <input name="lName" type="text">
+            </label>
+            <br>
+            <label> Email: <br>
+                <input name="email" type="email">
+            </label>
+            <br>
+            <label> Message:<br>
+                <textarea></textarea>
+            </label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section> -->
+
+
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2021 Copyright. All Rights Reserved.</p>
+        </footer>
 </body>
 
 </html>

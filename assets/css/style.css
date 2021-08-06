@@ -17,8 +17,6 @@ header {
 
 h2 {
     text-align: center;
-    margin: 30px 0 0;
-    padding-top: 30px;
 }
 
 #logo { 
@@ -31,6 +29,7 @@ h2 {
     font-weight: normal;
     font-size: 46px;
 }
+
 nav {
     position: absolute;
     top: 10px;
@@ -63,34 +62,43 @@ nav li :hover {
     background: #172A3A;
     color: #09BC8A;
 }
- #nickPic {
-    border-radius: 50%;
+
+ #introsection {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/img/nature.jpg);
+    background-size: cover;
  }
 
  #introContainer {
      text-align: center;
-     margin-top: 50px;
- }
-
- #introTitle {
-     margin-top: 10px;
+     border: 1px solid white;
+     max-width: 950px;
+     padding: 100px;
  }
 
  #skills {
-     background: #004346;
+     padding: 30px 0;
+     color: #172A3A;
+     background: #75DDDD;
  }
  #skillList {
      display: flex;
      justify-content: center;
      align-items: center;
-     background: #004346;
-     padding-bottom: 50px;
+     text-align: center;
  }
 
  .skillcontainer {
-     border: 2px solid white;
-     padding: 50px;
+     border: 2px solid black;
+     padding: 30px;
      margin: 20px;
+ }
+
+ .skillcontainer h3 {
+     padding: 0 0 10px;
  }
 
  #contactintro {
@@ -126,4 +134,14 @@ nav li :hover {
      border: 1px solid white;
      padding: 20px;
      margin: 0 15px;
+ }
+
+ .container img {
+     padding: 20px 0;
+ }
+
+ .container a {
+     text-decoration: none;
+     color: orange;
+     padding: 10px 0 0;
  }

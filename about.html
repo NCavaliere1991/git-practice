@@ -7,7 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <style>
+        #about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background: rgb(41, 21, 68);
+        }
+
+        #aboutcontainer {
+            text-align: center;
+        }
+
+
+        img {
+            border-radius: 50%;
+            padding: 30px 0;
+        }
+
+        footer {
+            background: url(assets/img/mountain-stars.jpg);
+            padding: 100px;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,22 +45,23 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div>
-        <h1>About Me</h1>
-        <p>I am a web developer, musician and bartender living in Queens, New York. While I'm not at work, you can find
-            me
-            playing music, hanging out with friends, playing video games or watching movies.</p>
-    </div>
+    <section id="about">
+        <div id="aboutcontainer">
+            <h1>About Me</h1>
+            <img src="assets/img/nick guitar.jpg" width="300">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo dolor corrupti, cupiditate, hic distinctio
+                recusandae laudantium placeat dignissimos modi iusto quia quisquam in rem quidem reprehenderit expedita
+                veritatis libero maxime.</p>
+        </div>
+    </section>
 
     <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <span><a href="https://www.linkedin.com/in/nc1116/"><i class="linkedin fab fa-linkedin"></i></a></span>
+        <span><a href="https://www.facebook.com/nick.cavaliere.14"><i class="facebook fab fa-facebook"></i></a></span>
         <p>&copy; 2021 Copyright. All Rights Reserved.</p>
     </footer>
 </body>

@@ -56,7 +56,7 @@ nav a {
     border: 1px solid white;
     font-size: 20px;
     width: 150px;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
 nav li :hover {

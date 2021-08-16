@@ -20,11 +20,14 @@
             background-attachment: fixed;
         }
 
+        #introcontainer {
+            max-width: 600px;
+        }
+
         #introcontent {
             background: rgba(0, 0, 0, 0.75);
             padding: 100px;
             border-radius: 20px;
-            max-width: 600px;
             text-align: center;
         }
 
@@ -36,57 +39,71 @@
             padding: 30px 0;
             color: #1e0155;
             background: #d4d8ee;
+            text-align: center;
+            font-size: 3vh;
         }
 
         #skillList {
             display: flex;
             justify-content: center;
-            align-items: center;
-            text-align: center;
+            width: 80%;
+            margin: 0 auto;
         }
 
         .skillcontainer {
             border: 2px solid black;
+            border-radius: 10%;
             padding: 30px;
             margin: 20px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+
         }
 
         .skillcontainer h3 {
             padding: 0 0 10px;
+            font-size: 2vw;
+        }
+
+        .skillcontainer h4 {
+            font-size: 1.5vw;
+        }
+
+        .skillcontent {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icon {
+            font-size: 6vw;
         }
 
         .html {
             color: red;
-            font-size: 100px;
         }
 
         .css {
             color: blue;
-            font-size: 100px;
         }
 
         .js {
             color: yellow;
-            font-size: 100px;
         }
 
         .php {
             color: blue;
-            font-size: 100px;
         }
 
         .bootstrap {
             color: purple;
-            font-size: 100px;
-        }
-
-        .python {
-            font-size: 100px;
         }
 
         .react {
             color: rgb(32, 159, 218);
-            font-size: 100px;
         }
 
         #projects {
@@ -106,6 +123,14 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+        }
+
+        .pic {
+            max-width: 70%;
+        }
+
+        #calc {
+            max-width: 60%;
         }
 
         .container {
@@ -135,6 +160,98 @@
             background-size: cover;
             text-align: center;
         }
+
+        @media screen and (max-width: 1366px) {
+            .skillcontainer h3 {
+                font-size: 2.5vw;
+            }
+
+            .skillcontainer h4 {
+                font-size: 2vw;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #skillList {
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+                align-items: center;
+            }
+
+            .skillcontainer {
+                width: 80%;
+                border-radius: 5px;
+            }
+
+            .skillcontainer h3 {
+                font-size: 4vw;
+            }
+
+            .skillcontainer h4 {
+                font-size: 3vw;
+            }
+
+            .icon {
+                font-size: 8vw;
+            }
+
+            #projectlist {
+                flex-direction: column;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .pic {
+                max-width: 40%;
+            }
+
+            #calc {
+                max-width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #introcontent {
+                width: 100%;
+
+            }
+
+            #skillList {
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            .skillcontainer {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .skillcontainer h3 {
+                font-size: 5vw;
+            }
+
+            .skillcontainer h4 {
+                font-size: 4vw;
+            }
+
+            .icon {
+                font-size: 12vw;
+            }
+
+            #projectlist {
+                flex-direction: column;
+            }
+
+            .container {
+                width: 100%;
+                margin: 0;
+            }
+        }
     </style>
 </head>
 
@@ -155,10 +272,8 @@
         <div id="introcontainer">
             <div id="introcontent">
                 <h1 id="intro">Hi, my name is Nick.</h1>
-                <p id="introTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facilis eaque totam
-                    voluptates sunt soluta repellendus numquam architecto, reiciendis eos sit enim commodi. Laboriosam
-                    pariatur maiores nemo odio eligendi necessitatibus.
-                <p>
+                <p id="introTitle">I am a web developer and designer from Queens, New York. With a passion for creation
+                    and solving problems, I strive to help clients create a unique and personalized online presence.
             </div>
         </div>
     </section>
@@ -166,27 +281,33 @@
         <h2>Skills</h2>
         <div id="skillList">
             <div class="skillcontainer">
-                <h3>Front-End</h3>
-                <h4>HTML</h4>
-                <p><i class="html fab fa-html5"></i></p>
-                <h4>CSS</h4>
-                <p><i class="css fab fa-css3-alt"></i></p>
-                <h4>Javascript</h4>
-                <p><i class="js fab fa-js"></i></p>
+                <div class="skillcontent">
+                    <h3>Front-End</h3>
+                    <h4>HTML</h4>
+                    <p><i class="icon html fab fa-html5"></i></p>
+                    <h4>CSS</h4>
+                    <p><i class="icon css fab fa-css3-alt"></i></p>
+                    <h4>Javascript</h4>
+                    <p><i class="icon js fab fa-js"></i></p>
+                </div>
             </div>
             <div class="skillcontainer">
-                <h3>Back-End</h3>
-                <h4>Python</h4>
-                <p><i class="python fab fa-python"></i></p>
-                <h4>PHP</h4>
-                <p><i class="php fab fa-php"></i></p>
+                <div class="skillcontent">
+                    <h3>Back-End</h3>
+                    <h4>Python</h4>
+                    <p><i class="icon python fab fa-python"></i></p>
+                    <h4>PHP</h4>
+                    <p><i class="icon php fab fa-php"></i></p>
+                </div>
             </div>
             <div class="skillcontainer">
-                <h3>Frameworks</h3>
-                <h4>Bootstrap</h4>
-                <p><i class="bootstrap fab fa-bootstrap"></i></p>
-                <h4>React</h4>
-                <p><i class="react fab fa-react"></i></p>
+                <div class="skillcontent">
+                    <h3>Frameworks</h3>
+                    <h4>Bootstrap</h4>
+                    <p><i class="icon bootstrap fab fa-bootstrap"></i></p>
+                    <h4>React</h4>
+                    <p><i class="icon react fab fa-react"></i></p>
+                </div>
             </div>
         </div>
     </section>
@@ -199,7 +320,7 @@
                 <h3>Tip calculator</h4>
                     <a href="https://ncavaliere1991.github.io/Tip-Calculator/">Click here to see the website</a>
                     <a href="https://github.com/NCavaliere1991/Tip-Calculator">Click here for the Github repository</a>
-                    <img id="calc" src="assets/img/tip-calculator.png" width="150">
+                    <img id="calc" src="assets/img/tip-calculator.png" class=pic>
                     <p>Is used to help the bartenders at my job do the money at the end of the night quickly,
                         efficiently and with less room for error.</p>
             </div>
@@ -207,7 +328,7 @@
                 <h3>Take a Break Website</h4>
                     <a href="https://iwanttotakeabreak.com/">Click here to see the website</a>
                     <a href="https://github.com/NCavaliere1991/Take-A-Break">Click here for the Github repository</a>
-                    <img src="assets/img/clock-break.jpeg" width="220">
+                    <img src="assets/img/clock-break.jpeg" class="pic">
                     <p>A website I built for a friend. Runs a timer to track amount of time the user is on the site and
                         cycles
                         through pictures of serene upstate New York. Meant to give the user respite from monotonous days

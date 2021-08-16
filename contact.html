@@ -21,7 +21,7 @@
         }
 
         input {
-            margin-bottom: 10px;
+            margin: 5px 0 10px;
         }
 
         #contactsection {
@@ -37,6 +37,28 @@
         #contactform {
             margin: auto;
             text-align: center;
+        }
+
+        .button {
+            padding: 10px;
+            border-radius: 10px;
+            background: black;
+            border: 1px solid white;
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .button:hover {
+            background: #172A3A;
+            color: #09BC8A;
+        }
+
+        textarea {
+            margin: 5px;
         }
     </style>
 </head>
@@ -57,7 +79,8 @@
     <section id="contactsection">
         <div id="contactintro">
             <h1>Drop Me a Line!</h1>
-            <p>I love working on new projects and helping others realize their vision. Shoot me an email and let's chat!
+            <p>I love working on new projects and helping clients make their vision come to life. Shoot me an email and
+                let's chat!
             </p>
         </div>
 
@@ -75,10 +98,10 @@
             </label>
             <br>
             <label> Message:<br>
-                <textarea></textarea>
+                <textarea rows="4" cols="50"></textarea>
             </label>
             <br>
-            <input type="submit" value="Submit">
+            <input class="button" type="submit" value="Contact Me">
         </form>
     </section>
 

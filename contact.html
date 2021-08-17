@@ -75,10 +75,23 @@
 
         textarea {
             margin: 5px;
+            max-width: 95%;
         }
 
         label {
             font-weight: bold;
+        }
+
+        @media screen and (max-width:768px) {
+            #contactform {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            textarea {
+                max-width: 40%;
+            }
         }
     </style>
 </head>

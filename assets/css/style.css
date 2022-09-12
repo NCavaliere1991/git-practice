@@ -38,16 +38,13 @@ h2 {
     display: none;
     cursor: pointer;
     font-size: 20px;
+    margin-right: 8px;
 }
 
 nav {
     position: absolute;
     top: 10px;
     right: 10px;
-}
-
-nav ul {
-    list-style-type: none;
 }
 
 nav li {
@@ -106,22 +103,15 @@ footer p {
         top: 50px;
         right: 20px;
     }
-
-    nav li ul {
-        display: none;
-        padding: 0;
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
     }
 
     nav a {
         background: black;
         border-radius: 0;
-    }
-
-    nav li:hover ul, nav li:hover li {
-        display:block;
-    }
-    .facebook {
-        font-size: 30px;
     }
 
     .linkedin {
